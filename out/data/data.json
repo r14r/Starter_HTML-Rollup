@@ -1,0 +1,540 @@
+{
+  "children": [
+    {
+      "level": 0,
+      "levelValues": [{ "value": "A5", "levelSourceIndex": 0 }],
+      "value": "A5",
+      "children": [
+        {
+          "level": 1,
+          "levelValues": [{ "value": "B1", "levelSourceIndex": 0 }],
+          "value": "B1",
+          "children": [
+            {
+              "level": 2,
+              "levelValues": [{ "value": "C1", "levelSourceIndex": 0 }],
+              "value": "C1",
+              "values": {
+                "0": { "value": 51111 },
+                "1": { "value": 51112 },
+                "2": { "value": 51113 },
+                "3": { "value": 51114 },
+                "4": { "value": 51115 },
+                "5": { "value": 255565 },
+                "6": { "value": null },
+                "7": { "value": null },
+                "8": { "value": 255565 }
+              }
+            },
+            {
+              "level": 2,
+              "isSubtotal": true,
+              "values": {
+                "0": { "value": 51111 },
+                "1": { "value": 51112 },
+                "2": { "value": 51113 },
+                "3": { "value": 51114 },
+                "4": { "value": 51115 },
+                "5": { "value": 255565 },
+                "6": { "value": null },
+                "7": { "value": null },
+                "8": { "value": 255565 }
+              }
+            }
+          ]
+        },
+        {
+          "level": 1,
+          "isSubtotal": true,
+          "values": {
+            "0": { "value": 51111 },
+            "1": { "value": 51112 },
+            "2": { "value": 51113 },
+            "3": { "value": 51114 },
+            "4": { "value": 51115 },
+            "5": { "value": 255565 },
+            "6": { "value": null },
+            "7": { "value": null },
+            "8": { "value": 255565 }
+          }
+        }
+      ]
+    },
+    {
+      "level": 0,
+      "levelValues": [{ "value": "A2", "levelSourceIndex": 0 }],
+      "value": "A2",
+      "children": [
+        {
+          "level": 1,
+          "levelValues": [{ "value": "B2", "levelSourceIndex": 0 }],
+          "value": "B2",
+          "children": [
+            {
+              "level": 2,
+              "levelValues": [{ "value": "C1", "levelSourceIndex": 0 }],
+              "value": "C1",
+              "values": {
+                "0": { "value": 22111 },
+                "1": { "value": 22112 },
+                "2": { "value": null },
+                "3": { "value": null },
+                "4": { "value": null },
+                "5": { "value": 44223 },
+                "6": { "value": null },
+                "7": { "value": null },
+                "8": { "value": 44223 }
+              }
+            },
+            {
+              "level": 2,
+              "levelValues": [{ "value": "C2", "levelSourceIndex": 0 }],
+              "value": "C2",
+              "identity": { "identityIndex": 6 },
+              "values": {
+                "0": { "value": null },
+                "1": { "value": null },
+                "2": { "value": null },
+                "3": { "value": null },
+                "4": { "value": null },
+                "5": { "value": null },
+                "6": { "value": 22221 },
+                "7": { "value": 22221 },
+                "8": { "value": 22221 }
+              }
+            },
+            {
+              "level": 2,
+              "isSubtotal": true,
+              "values": {
+                "0": { "value": 22111 },
+                "1": { "value": 22112 },
+                "2": { "value": null },
+                "3": { "value": null },
+                "4": { "value": null },
+                "5": { "value": 44223 },
+                "6": { "value": 22221 },
+                "7": { "value": 22221 },
+                "8": { "value": 66444 }
+              }
+            }
+          ]
+        },
+        {
+          "level": 1,
+          "levelValues": [{ "value": "B1", "levelSourceIndex": 0 }],
+          "value": "B1",
+          "identity": { "identityIndex": 7 },
+          "childIdentityFields": [
+            {
+              "_kind": 2,
+              "source": { "_kind": 0, "entity": "Table", "kind": 0 },
+              "ref": "C",
+              "kind": 2
+            }
+          ],
+          "children": [
+            {
+              "level": 2,
+              "levelValues": [{ "value": "C1", "levelSourceIndex": 0 }],
+              "value": "C1",
+              "identity": { "identityIndex": 8 },
+              "values": {
+                "0": { "value": 21111 },
+                "1": { "value": 21112 },
+                "2": { "value": null },
+                "3": { "value": null },
+                "4": { "value": null },
+                "5": { "value": 42223 },
+                "6": { "value": null },
+                "7": { "value": null },
+                "8": { "value": 42223 }
+              }
+            },
+            {
+              "level": 2,
+              "levelValues": [{ "value": "C2", "levelSourceIndex": 0 }],
+              "value": "C2",
+              "identity": { "identityIndex": 9 },
+              "values": {
+                "0": { "value": null },
+                "1": { "value": null },
+                "2": { "value": null },
+                "3": { "value": null },
+                "4": { "value": null },
+                "5": { "value": null },
+                "6": { "value": 21221 },
+                "7": { "value": 21221 },
+                "8": { "value": 21221 }
+              }
+            },
+            {
+              "level": 2,
+              "isSubtotal": true,
+              "values": {
+                "0": { "value": 21111 },
+                "1": { "value": 21112 },
+                "2": { "value": null },
+                "3": { "value": null },
+                "4": { "value": null },
+                "5": { "value": 42223 },
+                "6": { "value": 21221 },
+                "7": { "value": 21221 },
+                "8": { "value": 63444 }
+              }
+            }
+          ]
+        },
+        {
+          "level": 1,
+          "isSubtotal": true,
+          "values": {
+            "0": { "value": 43222 },
+            "1": { "value": 43224 },
+            "2": { "value": null },
+            "3": { "value": null },
+            "4": { "value": null },
+            "5": { "value": 86446 },
+            "6": { "value": 43442 },
+            "7": { "value": 43442 },
+            "8": { "value": 129888 }
+          }
+        }
+      ]
+    },
+    {
+      "level": 0,
+      "levelValues": [{ "value": "A1", "levelSourceIndex": 0 }],
+      "value": "A1",
+      "identity": { "identityIndex": 10 },
+      "childIdentityFields": [
+        {
+          "_kind": 2,
+          "source": { "_kind": 0, "entity": "Table", "kind": 0 },
+          "ref": "B",
+          "kind": 2
+        }
+      ],
+      "children": [
+        {
+          "level": 1,
+          "levelValues": [{ "value": "B2", "levelSourceIndex": 0 }],
+          "value": "B2",
+          "identity": { "identityIndex": 11 },
+          "childIdentityFields": [
+            {
+              "_kind": 2,
+              "source": { "_kind": 0, "entity": "Table", "kind": 0 },
+              "ref": "C",
+              "kind": 2
+            }
+          ],
+          "children": [
+            {
+              "level": 2,
+              "levelValues": [{ "value": "C1", "levelSourceIndex": 0 }],
+              "value": "C1",
+              "identity": { "identityIndex": 12 },
+              "values": {
+                "0": { "value": 12111 },
+                "1": { "value": 12112 },
+                "2": { "value": null },
+                "3": { "value": null },
+                "4": { "value": null },
+                "5": { "value": 24223 },
+                "6": { "value": null },
+                "7": { "value": null },
+                "8": { "value": 24223 }
+              }
+            },
+            {
+              "level": 2,
+              "levelValues": [{ "value": "C2", "levelSourceIndex": 0 }],
+              "value": "C2",
+              "identity": { "identityIndex": 13 },
+              "values": {
+                "0": { "value": null },
+                "1": { "value": null },
+                "2": { "value": null },
+                "3": { "value": null },
+                "4": { "value": null },
+                "5": { "value": null },
+                "6": { "value": 12221 },
+                "7": { "value": 12221 },
+                "8": { "value": 12221 }
+              }
+            },
+            {
+              "level": 2,
+              "isSubtotal": true,
+              "values": {
+                "0": { "value": 12111 },
+                "1": { "value": 12112 },
+                "2": { "value": null },
+                "3": { "value": null },
+                "4": { "value": null },
+                "5": { "value": 24223 },
+                "6": { "value": 12221 },
+                "7": { "value": 12221 },
+                "8": { "value": 36444 }
+              }
+            }
+          ]
+        },
+        {
+          "level": 1,
+          "levelValues": [{ "value": "B1", "levelSourceIndex": 0 }],
+          "value": "B1",
+          "identity": { "identityIndex": 14 },
+          "childIdentityFields": [
+            {
+              "_kind": 2,
+              "source": { "_kind": 0, "entity": "Table", "kind": 0 },
+              "ref": "C",
+              "kind": 2
+            }
+          ],
+          "children": [
+            {
+              "level": 2,
+              "levelValues": [{ "value": "C1", "levelSourceIndex": 0 }],
+              "value": "C1",
+              "identity": { "identityIndex": 15 },
+              "values": {
+                "0": { "value": 11111 },
+                "1": { "value": 11112 },
+                "2": { "value": null },
+                "3": { "value": null },
+                "4": { "value": null },
+                "5": { "value": 22223 },
+                "6": { "value": null },
+                "7": { "value": null },
+                "8": { "value": 22223 }
+              }
+            },
+            {
+              "level": 2,
+              "levelValues": [{ "value": "C2", "levelSourceIndex": 0 }],
+              "value": "C2",
+              "identity": { "identityIndex": 16 },
+              "values": {
+                "0": { "value": null },
+                "1": { "value": null },
+                "2": { "value": null },
+                "3": { "value": null },
+                "4": { "value": null },
+                "5": { "value": null },
+                "6": { "value": 11221 },
+                "7": { "value": 11221 },
+                "8": { "value": 11221 }
+              }
+            },
+            {
+              "level": 2,
+              "isSubtotal": true,
+              "values": {
+                "0": { "value": 11111 },
+                "1": { "value": 11112 },
+                "2": { "value": null },
+                "3": { "value": null },
+                "4": { "value": null },
+                "5": { "value": 22223 },
+                "6": { "value": 11221 },
+                "7": { "value": 11221 },
+                "8": { "value": 33444 }
+              }
+            }
+          ]
+        },
+        {
+          "level": 1,
+          "isSubtotal": true,
+          "values": {
+            "0": { "value": 23222 },
+            "1": { "value": 23224 },
+            "2": { "value": null },
+            "3": { "value": null },
+            "4": { "value": null },
+            "5": { "value": 46446 },
+            "6": { "value": 23442 },
+            "7": { "value": 23442 },
+            "8": { "value": 69888 }
+          }
+        }
+      ]
+    },
+    {
+      "level": 0,
+      "levelValues": [{ "value": "A4", "levelSourceIndex": 0 }],
+      "value": "A4",
+      "identity": { "identityIndex": 17 },
+      "childIdentityFields": [
+        {
+          "_kind": 2,
+          "source": { "_kind": 0, "entity": "Table", "kind": 0 },
+          "ref": "B",
+          "kind": 2
+        }
+      ],
+      "children": [
+        {
+          "level": 1,
+          "levelValues": [{ "value": "B1", "levelSourceIndex": 0 }],
+          "value": "B1",
+          "identity": { "identityIndex": 18 },
+          "childIdentityFields": [
+            {
+              "_kind": 2,
+              "source": { "_kind": 0, "entity": "Table", "kind": 0 },
+              "ref": "C",
+              "kind": 2
+            }
+          ],
+          "children": [
+            {
+              "level": 2,
+              "levelValues": [{ "value": "C1", "levelSourceIndex": 0 }],
+              "value": "C1",
+              "identity": { "identityIndex": 19 },
+              "values": {
+                "0": { "value": 41111 },
+                "1": { "value": null },
+                "2": { "value": null },
+                "3": { "value": null },
+                "4": { "value": null },
+                "5": { "value": 41111 },
+                "6": { "value": null },
+                "7": { "value": null },
+                "8": { "value": 41111 }
+              }
+            },
+            {
+              "level": 2,
+              "isSubtotal": true,
+              "values": {
+                "0": { "value": 41111 },
+                "1": { "value": null },
+                "2": { "value": null },
+                "3": { "value": null },
+                "4": { "value": null },
+                "5": { "value": 41111 },
+                "6": { "value": null },
+                "7": { "value": null },
+                "8": { "value": 41111 }
+              }
+            }
+          ]
+        },
+        {
+          "level": 1,
+          "isSubtotal": true,
+          "values": {
+            "0": { "value": 41111 },
+            "1": { "value": null },
+            "2": { "value": null },
+            "3": { "value": null },
+            "4": { "value": null },
+            "5": { "value": 41111 },
+            "6": { "value": null },
+            "7": { "value": null },
+            "8": { "value": 41111 }
+          }
+        }
+      ]
+    },
+    {
+      "level": 0,
+      "levelValues": [{ "value": "A3", "levelSourceIndex": 0 }],
+      "value": "A3",
+      "identity": { "identityIndex": 20 },
+      "childIdentityFields": [
+        {
+          "_kind": 2,
+          "source": { "_kind": 0, "entity": "Table", "kind": 0 },
+          "ref": "B",
+          "kind": 2
+        }
+      ],
+      "children": [
+        {
+          "level": 1,
+          "levelValues": [{ "value": "B1", "levelSourceIndex": 0 }],
+          "value": "B1",
+          "identity": { "identityIndex": 21 },
+          "childIdentityFields": [
+            {
+              "_kind": 2,
+              "source": { "_kind": 0, "entity": "Table", "kind": 0 },
+              "ref": "C",
+              "kind": 2
+            }
+          ],
+          "children": [
+            {
+              "level": 2,
+              "levelValues": [{ "value": "C1", "levelSourceIndex": 0 }],
+              "value": "C1",
+              "identity": { "identityIndex": 22 },
+              "values": {
+                "0": { "value": 31111 },
+                "1": { "value": null },
+                "2": { "value": null },
+                "3": { "value": null },
+                "4": { "value": null },
+                "5": { "value": 31111 },
+                "6": { "value": null },
+                "7": { "value": null },
+                "8": { "value": 31111 }
+              }
+            },
+            {
+              "level": 2,
+              "isSubtotal": true,
+              "values": {
+                "0": { "value": 31111 },
+                "1": { "value": null },
+                "2": { "value": null },
+                "3": { "value": null },
+                "4": { "value": null },
+                "5": { "value": 31111 },
+                "6": { "value": null },
+                "7": { "value": null },
+                "8": { "value": 31111 }
+              }
+            }
+          ]
+        },
+        {
+          "level": 1,
+          "isSubtotal": true,
+          "values": {
+            "0": { "value": 31111 },
+            "1": { "value": null },
+            "2": { "value": null },
+            "3": { "value": null },
+            "4": { "value": null },
+            "5": { "value": 31111 },
+            "6": { "value": null },
+            "7": { "value": null },
+            "8": { "value": 31111 }
+          }
+        }
+      ]
+    },
+    {
+      "level": 0,
+      "isSubtotal": true,
+      "values": {
+        "0": { "value": 189777 },
+        "1": { "value": 117560 },
+        "2": { "value": 51113 },
+        "3": { "value": 51114 },
+        "4": { "value": 51115 },
+        "5": { "value": 460679 },
+        "6": { "value": 66884 },
+        "7": { "value": 66884 },
+        "8": { "value": 527563 }
+      }
+    }
+  ]
+}

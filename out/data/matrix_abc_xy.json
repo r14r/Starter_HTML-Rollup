@@ -1,0 +1,182 @@
+{
+  "rows": {
+    "levels": [
+      {"sources": [{"roles": { "rows": true },"displayName": "A","rolesIndex": { "rows": [0] },"index": 0}]},
+      {"sources": [{"roles": { "rows": true },"displayName": "B","rolesIndex": { "rows": [1] },"index": 1}]},
+      {"sources": [{"roles": { "rows": true },"displayName": "C","rolesIndex": { "rows": [2] },"index": 2}]}
+    ],
+    "root": {
+      "children": [
+        {
+          "level": 0,
+          "levelValues": [{ "value": "A2" }],
+          "value": "A2",
+          "children": [
+            {
+              "level": 1,
+              "levelValues": [{ "value": "B1" }],
+              "value": "B1",
+              "identity": { "identityIndex": 1 },
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [{ "value": "C1" }],
+                  "value": "C1",
+                  "identity": { "identityIndex": 2 },
+                  "values": {
+                    "0": { "value": "A2B1C1X1Y1" },
+                    "1": { "value": "A2B1C1X1Y2" },
+                    "2": { "value": "A2B1C1X1Y1" },
+                    "3": { "value": "A2B1C1X1Y1" }
+                  }
+                },
+                {
+                  "level": 2,
+                  "isSubtotal": true,
+                  "values": {
+                    "0": { "value": "A2B1C1X1Y1" },
+                    "1": { "value": "A2B1C1X1Y2" },
+                    "2": { "value": "A2B1C1X1Y1" },
+                    "3": { "value": "A2B1C1X1Y1" }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "B2" }],
+              "value": "B2",
+              "identity": { "identityIndex": 3 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Table", "kind": 0 },
+                  "ref": "C",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [{ "value": "C1" }],
+                  "value": "C1",
+                  "identity": { "identityIndex": 4 },
+                  "values": {
+                    "0": { "value": "A2B2C1X1Y1" },
+                    "1": { "value": "A2B2C1X1Y2" },
+                    "2": { "value": "A2B2C1X1Y1" },
+                    "3": { "value": "A2B2C1X1Y1" }
+                  }
+                },
+                {
+                  "level": 2,
+                  "isSubtotal": true,
+                  "values": {
+                    "0": { "value": "A2B2C1X1Y1" },
+                    "1": { "value": "A2B2C1X1Y2" },
+                    "2": { "value": "A2B2C1X1Y1" },
+                    "3": { "value": "A2B2C1X1Y1" }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "isSubtotal": true,
+              "values": {
+                "0": { "value": "A2B1C1X1Y1" },
+                "1": { "value": "A2B1C1X1Y2" },
+                "2": { "value": "A2B1C1X1Y1" },
+                "3": { "value": "A2B1C1X1Y1" }
+              }
+            }
+          ]
+        },
+        {
+          "level": 0,
+          "isSubtotal": true,
+          "values": {
+            "0": { "value": "A2B1C1X1Y1" },
+            "1": { "value": "A2B1C1X1Y2" },
+            "2": { "value": "A2B1C1X1Y1" },
+            "3": { "value": "A2B1C1X1Y1" }
+          }
+        }
+      ]
+    }
+  },
+  "columns": {
+    "levels": [
+      {"sources": [{"roles": { "columns": true },"displayName": "X","rolesIndex": { "columns": [0] },"index": 3}]},
+      {"sources": [{"roles": { "columns": true },"displayName": "Y","rolesIndex": { "columns": [1] },"index": 5}]}
+    ],
+    "root": {
+      "children": [
+        {
+          "level": 0,
+          "levelValues": [{ "value": "X1" }],
+          "value": "X1",
+          "identity": { "identityIndex": 5 },
+          "children": [
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Y1" }],
+              "value": "Y1",
+              "identity": { "identityIndex": 6 }
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Y2" }],
+              "value": "Y2",
+              "identity": { "identityIndex": 7 }
+            },
+            { "level": 1, "isSubtotal": true }
+          ]
+        },
+        { "level": 0, "isSubtotal": true }
+      ]
+    }
+  },
+  "valueSources": [
+    {
+      "roles": { "measure": true },
+      "type": {
+        "underlyingType": 1,
+        "category": null,
+        "primitiveType": 1,
+        "extendedType": 1,
+        "categoryString": null,
+        "text": true,
+        "numeric": false,
+        "integer": false,
+        "bool": false,
+        "dateTime": false,
+        "duration": false,
+        "binary": false,
+        "json": false,
+        "none": false
+      },
+      "displayName": "First Values",
+      "queryName": "Min(Table.Values)",
+      "expr": {
+        "_kind": 4,
+        "arg": {
+          "_kind": 2,
+          "source": {
+            "_kind": 0,
+            "entity": "Table",
+            "variable": "t",
+            "kind": 0
+          },
+          "ref": "Values",
+          "kind": 2
+        },
+        "func": 3,
+        "kind": 4
+      },
+      "rolesIndex": { "measure": [0] },
+      "index": 4,
+      "isMeasure": true
+    }
+  ]
+}

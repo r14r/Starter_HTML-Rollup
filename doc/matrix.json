@@ -1,0 +1,3213 @@
+{
+  "rows": {
+    "levels": [
+      {
+        "sources": [
+          {
+            "roles": { "rows": true },
+            "type": {
+              "underlyingType": 1,
+              "category": null,
+              "primitiveType": 1,
+              "extendedType": 1,
+              "categoryString": null,
+              "text": true,
+              "numeric": false,
+              "integer": false,
+              "bool": false,
+              "dateTime": false,
+              "duration": false,
+              "binary": false,
+              "json": false,
+              "none": false
+            },
+            "displayName": "Category",
+            "queryName": "Product.Category",
+            "expr": {
+              "_kind": 2,
+              "source": {
+                "_kind": 0,
+                "entity": "Product",
+                "variable": "p",
+                "kind": 0
+              },
+              "ref": "Category",
+              "kind": 2
+            },
+            "rolesIndex": { "rows": [0] },
+            "index": 0,
+            "identityExprs": [
+              {
+                "_kind": 2,
+                "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                "ref": "Category",
+                "kind": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "sources": [
+          {
+            "roles": { "rows": true },
+            "type": {
+              "underlyingType": 1,
+              "category": null,
+              "primitiveType": 1,
+              "extendedType": 1,
+              "categoryString": null,
+              "text": true,
+              "numeric": false,
+              "integer": false,
+              "bool": false,
+              "dateTime": false,
+              "duration": false,
+              "binary": false,
+              "json": false,
+              "none": false
+            },
+            "displayName": "Region",
+            "queryName": "Region.Region",
+            "expr": {
+              "_kind": 2,
+              "source": {
+                "_kind": 0,
+                "entity": "Region",
+                "variable": "r",
+                "kind": 0
+              },
+              "ref": "Region",
+              "kind": 2
+            },
+            "rolesIndex": { "rows": [1] },
+            "index": 2,
+            "identityExprs": [
+              {
+                "_kind": 2,
+                "source": { "_kind": 0, "entity": "Region", "kind": 0 },
+                "ref": "Region",
+                "kind": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "sources": [
+          {
+            "roles": { "rows": true },
+            "type": {
+              "underlyingType": 1,
+              "category": null,
+              "primitiveType": 1,
+              "extendedType": 1,
+              "categoryString": null,
+              "text": true,
+              "numeric": false,
+              "integer": false,
+              "bool": false,
+              "dateTime": false,
+              "duration": false,
+              "binary": false,
+              "json": false,
+              "none": false
+            },
+            "displayName": "Item Group",
+            "queryName": "Product.Item Group",
+            "expr": {
+              "_kind": 2,
+              "source": {
+                "_kind": 0,
+                "entity": "Product",
+                "variable": "p",
+                "kind": 0
+              },
+              "ref": "Item Group",
+              "kind": 2
+            },
+            "rolesIndex": { "rows": [2] },
+            "index": 4,
+            "identityExprs": [
+              {
+                "_kind": 2,
+                "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                "ref": "Item Group",
+                "kind": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root": {
+      "childIdentityFields": [
+        {
+          "_kind": 2,
+          "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+          "ref": "Category",
+          "kind": 2
+        }
+      ],
+      "children": [
+        {
+          "level": 0,
+          "levelValues": [{ "value": "Warbird", "levelSourceIndex": 0 }],
+          "value": "Warbird",
+          "identity": { "identityIndex": 0 },
+          "childIdentityFields": [
+            {
+              "_kind": 2,
+              "source": { "_kind": 0, "entity": "Region", "kind": 0 },
+              "ref": "Region",
+              "kind": 2
+            }
+          ],
+          "children": [
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Midwest", "levelSourceIndex": 0 }],
+              "value": "Midwest",
+              "identity": { "identityIndex": 1 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Airplane", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Airplane",
+                  "identity": { "identityIndex": 2 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": 349.75 },
+                    "13": { "valueSourceIndex": 1, "value": 868883.05 },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": 98.95 },
+                    "25": { "valueSourceIndex": 1, "value": 273354.85 },
+                    "26": { "value": 274.95 },
+                    "27": { "valueSourceIndex": 1, "value": 2188452.45 },
+                    "28": { "value": 274.95 },
+                    "29": { "valueSourceIndex": 1, "value": 602050.45 },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "New England", "levelSourceIndex": 0 }
+              ],
+              "value": "New England",
+              "identity": { "identityIndex": 3 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Airplane", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Airplane",
+                  "identity": { "identityIndex": 4 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": 349.75 },
+                    "13": { "valueSourceIndex": 1, "value": 132534.65 },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": 98.95 },
+                    "25": { "valueSourceIndex": 1, "value": 39097.8 },
+                    "26": { "value": 274.95 },
+                    "27": { "valueSourceIndex": 1, "value": 302051.3 },
+                    "28": { "value": 274.95 },
+                    "29": { "valueSourceIndex": 1, "value": 87727.45 },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Northeast", "levelSourceIndex": 0 }],
+              "value": "Northeast",
+              "identity": { "identityIndex": 5 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Airplane", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Airplane",
+                  "identity": { "identityIndex": 6 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": 349.75 },
+                    "13": { "valueSourceIndex": 1, "value": 421299.95 },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": 98.95 },
+                    "25": { "valueSourceIndex": 1, "value": 131257.5 },
+                    "26": { "value": 274.95 },
+                    "27": { "valueSourceIndex": 1, "value": 1085626.3 },
+                    "28": { "value": 274.95 },
+                    "29": { "valueSourceIndex": 1, "value": 289232.35 },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "Pacific Northwest", "levelSourceIndex": 0 }
+              ],
+              "value": "Pacific Northwest",
+              "identity": { "identityIndex": 7 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Airplane", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Airplane",
+                  "identity": { "identityIndex": 8 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": 349.75 },
+                    "13": { "valueSourceIndex": 1, "value": 288043.25 },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": 98.95 },
+                    "25": { "valueSourceIndex": 1, "value": 90766.4 },
+                    "26": { "value": 274.95 },
+                    "27": { "valueSourceIndex": 1, "value": 674582.8 },
+                    "28": { "value": 274.95 },
+                    "29": { "valueSourceIndex": 1, "value": 196777.9 },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Southern", "levelSourceIndex": 0 }],
+              "value": "Southern",
+              "identity": { "identityIndex": 9 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Airplane", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Airplane",
+                  "identity": { "identityIndex": 10 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": 349.75 },
+                    "13": { "valueSourceIndex": 1, "value": 1155363 },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": 98.95 },
+                    "25": { "valueSourceIndex": 1, "value": 370788 },
+                    "26": { "value": 274.95 },
+                    "27": { "valueSourceIndex": 1, "value": 2960644.55 },
+                    "28": { "value": 274.95 },
+                    "29": { "valueSourceIndex": 1, "value": 825042.35 },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Southwest", "levelSourceIndex": 0 }],
+              "value": "Southwest",
+              "identity": { "identityIndex": 11 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Airplane", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Airplane",
+                  "identity": { "identityIndex": 12 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": 349.75 },
+                    "13": { "valueSourceIndex": 1, "value": 650019.7 },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": 98.95 },
+                    "25": { "valueSourceIndex": 1, "value": 214269.85 },
+                    "26": { "value": 274.95 },
+                    "27": { "valueSourceIndex": 1, "value": 1679049.1 },
+                    "28": { "value": 274.95 },
+                    "29": { "valueSourceIndex": 1, "value": 448190.6 },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 0,
+          "levelValues": [{ "value": "Trainer", "levelSourceIndex": 0 }],
+          "value": "Trainer",
+          "identity": { "identityIndex": 13 },
+          "childIdentityFields": [
+            {
+              "_kind": 2,
+              "source": { "_kind": 0, "entity": "Region", "kind": 0 },
+              "ref": "Region",
+              "kind": 2
+            }
+          ],
+          "children": [
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Midwest", "levelSourceIndex": 0 }],
+              "value": "Midwest",
+              "identity": { "identityIndex": 14 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Airplane", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Airplane",
+                  "identity": { "identityIndex": 15 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": 188.05 },
+                    "3": { "valueSourceIndex": 1, "value": 805401.95 },
+                    "4": { "value": 204.55 },
+                    "5": { "valueSourceIndex": 1, "value": 1441811.05 },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": 84.65 },
+                    "31": { "valueSourceIndex": 1, "value": 301980.65 },
+                    "32": { "value": 193.55 },
+                    "33": { "valueSourceIndex": 1, "value": 2830225.7 },
+                    "34": { "value": 179.25 },
+                    "35": { "valueSourceIndex": 1, "value": 566080.6 },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "New England", "levelSourceIndex": 0 }
+              ],
+              "value": "New England",
+              "identity": { "identityIndex": 16 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Airplane", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Airplane",
+                  "identity": { "identityIndex": 17 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": 188.05 },
+                    "3": { "valueSourceIndex": 1, "value": 179750.7 },
+                    "4": { "value": 204.55 },
+                    "5": { "valueSourceIndex": 1, "value": 312207.05 },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": 84.65 },
+                    "31": { "valueSourceIndex": 1, "value": 70383.7 },
+                    "32": { "value": 193.55 },
+                    "33": { "valueSourceIndex": 1, "value": 725788.95 },
+                    "34": { "value": 179.25 },
+                    "35": { "valueSourceIndex": 1, "value": 134892.15 },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Northeast", "levelSourceIndex": 0 }],
+              "value": "Northeast",
+              "identity": { "identityIndex": 18 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Airplane", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Airplane",
+                  "identity": { "identityIndex": 19 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": 188.05 },
+                    "3": { "valueSourceIndex": 1, "value": 443080.7 },
+                    "4": { "value": 204.55 },
+                    "5": { "valueSourceIndex": 1, "value": 810603.35 },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": 84.65 },
+                    "31": { "valueSourceIndex": 1, "value": 160973.9 },
+                    "32": { "value": 193.55 },
+                    "33": { "valueSourceIndex": 1, "value": 1390118.55 },
+                    "34": { "value": 179.25 },
+                    "35": { "valueSourceIndex": 1, "value": 304758.55 },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "Pacific Northwest", "levelSourceIndex": 0 }
+              ],
+              "value": "Pacific Northwest",
+              "identity": { "identityIndex": 20 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Airplane", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Airplane",
+                  "identity": { "identityIndex": 21 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": 188.05 },
+                    "3": { "valueSourceIndex": 1, "value": 239297.65 },
+                    "4": { "value": 204.55 },
+                    "5": { "valueSourceIndex": 1, "value": 430358.4 },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": 84.65 },
+                    "31": { "valueSourceIndex": 1, "value": 89186.1 },
+                    "32": { "value": 193.55 },
+                    "33": { "valueSourceIndex": 1, "value": 1140154.8 },
+                    "34": { "value": 179.25 },
+                    "35": { "valueSourceIndex": 1, "value": 171612.5 },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Southern", "levelSourceIndex": 0 }],
+              "value": "Southern",
+              "identity": { "identityIndex": 22 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Airplane", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Airplane",
+                  "identity": { "identityIndex": 23 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": 188.05 },
+                    "3": { "valueSourceIndex": 1, "value": 1103402.1 },
+                    "4": { "value": 204.55 },
+                    "5": { "valueSourceIndex": 1, "value": 1987618.1 },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": 84.65 },
+                    "31": { "valueSourceIndex": 1, "value": 409724.65 },
+                    "32": { "value": 193.55 },
+                    "33": { "valueSourceIndex": 1, "value": 3439615.7 },
+                    "34": { "value": 179.25 },
+                    "35": { "valueSourceIndex": 1, "value": 768124.75 },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Southwest", "levelSourceIndex": 0 }],
+              "value": "Southwest",
+              "identity": { "identityIndex": 24 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Airplane", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Airplane",
+                  "identity": { "identityIndex": 25 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": 188.05 },
+                    "3": { "valueSourceIndex": 1, "value": 566288.1 },
+                    "4": { "value": 204.55 },
+                    "5": { "valueSourceIndex": 1, "value": 945109.5 },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": 84.65 },
+                    "31": { "valueSourceIndex": 1, "value": 210292.45 },
+                    "32": { "value": 193.55 },
+                    "33": { "valueSourceIndex": 1, "value": 1480553.6 },
+                    "34": { "value": 179.25 },
+                    "35": { "valueSourceIndex": 1, "value": 384757.25 },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 0,
+          "levelValues": [
+            { "value": "Collective pitch", "levelSourceIndex": 0 }
+          ],
+          "value": "Collective pitch",
+          "identity": { "identityIndex": 26 },
+          "childIdentityFields": [
+            {
+              "_kind": 2,
+              "source": { "_kind": 0, "entity": "Region", "kind": 0 },
+              "ref": "Region",
+              "kind": 2
+            }
+          ],
+          "children": [
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Midwest", "levelSourceIndex": 0 }],
+              "value": "Midwest",
+              "identity": { "identityIndex": 27 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Helicopter", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Helicopter",
+                  "identity": { "identityIndex": 28 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": 579.55 },
+                    "9": { "valueSourceIndex": 1, "value": 17343642.2 },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": 239.95 },
+                    "23": { "valueSourceIndex": 1, "value": 3542263.8 },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "New England", "levelSourceIndex": 0 }
+              ],
+              "value": "New England",
+              "identity": { "identityIndex": 29 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Helicopter", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Helicopter",
+                  "identity": { "identityIndex": 30 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": 579.55 },
+                    "9": { "valueSourceIndex": 1, "value": 7322628.45 },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": 239.95 },
+                    "23": { "valueSourceIndex": 1, "value": 833242.45 },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Northeast", "levelSourceIndex": 0 }],
+              "value": "Northeast",
+              "identity": { "identityIndex": 31 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Helicopter", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Helicopter",
+                  "identity": { "identityIndex": 32 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": 579.55 },
+                    "9": { "valueSourceIndex": 1, "value": 9383015.2 },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": 239.95 },
+                    "23": { "valueSourceIndex": 1, "value": 1525589.15 },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "Pacific Northwest", "levelSourceIndex": 0 }
+              ],
+              "value": "Pacific Northwest",
+              "identity": { "identityIndex": 33 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Helicopter", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Helicopter",
+                  "identity": { "identityIndex": 34 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": 579.55 },
+                    "9": { "valueSourceIndex": 1, "value": 9055054.05 },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": 239.95 },
+                    "23": { "valueSourceIndex": 1, "value": 1480419.7 },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Southern", "levelSourceIndex": 0 }],
+              "value": "Southern",
+              "identity": { "identityIndex": 35 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Helicopter", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Helicopter",
+                  "identity": { "identityIndex": 36 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": 579.55 },
+                    "9": { "valueSourceIndex": 1, "value": 19765579.75 },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": 239.95 },
+                    "23": { "valueSourceIndex": 1, "value": 4083772.1 },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Southwest", "levelSourceIndex": 0 }],
+              "value": "Southwest",
+              "identity": { "identityIndex": 37 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Helicopter", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Helicopter",
+                  "identity": { "identityIndex": 38 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": 579.55 },
+                    "9": { "valueSourceIndex": 1, "value": 4760660.35 },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": 239.95 },
+                    "23": { "valueSourceIndex": 1, "value": 1800469.85 },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 0,
+          "levelValues": [{ "value": "Fixed pitch", "levelSourceIndex": 0 }],
+          "value": "Fixed pitch",
+          "identity": { "identityIndex": 39 },
+          "childIdentityFields": [
+            {
+              "_kind": 2,
+              "source": { "_kind": 0, "entity": "Region", "kind": 0 },
+              "ref": "Region",
+              "kind": 2
+            }
+          ],
+          "children": [
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Midwest", "levelSourceIndex": 0 }],
+              "value": "Midwest",
+              "identity": { "identityIndex": 40 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Helicopter", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Helicopter",
+                  "identity": { "identityIndex": 41 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": 401.95 },
+                    "11": { "valueSourceIndex": 1, "value": 21688.6 },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": 149.95 },
+                    "17": { "valueSourceIndex": 1, "value": 69209.55 },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": 176.35 },
+                    "21": { "valueSourceIndex": 1, "value": 18893.25 },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "New England", "levelSourceIndex": 0 }
+              ],
+              "value": "New England",
+              "identity": { "identityIndex": 42 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Helicopter", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Helicopter",
+                  "identity": { "identityIndex": 43 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": 401.95 },
+                    "11": { "valueSourceIndex": 1, "value": 6060.05 },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": 149.95 },
+                    "17": { "valueSourceIndex": 1, "value": 21821.65 },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": 176.35 },
+                    "21": { "valueSourceIndex": 1, "value": 5038.2 },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Northeast", "levelSourceIndex": 0 }],
+              "value": "Northeast",
+              "identity": { "identityIndex": 44 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Helicopter", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Helicopter",
+                  "identity": { "identityIndex": 45 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": 401.95 },
+                    "11": { "valueSourceIndex": 1, "value": 9249.55 },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": 149.95 },
+                    "17": { "valueSourceIndex": 1, "value": 31762.9 },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": 176.35 },
+                    "21": { "valueSourceIndex": 1, "value": 9236.7 },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "Pacific Northwest", "levelSourceIndex": 0 }
+              ],
+              "value": "Pacific Northwest",
+              "identity": { "identityIndex": 46 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Helicopter", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Helicopter",
+                  "identity": { "identityIndex": 47 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": 401.95 },
+                    "11": { "valueSourceIndex": 1, "value": 9249.55 },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": 149.95 },
+                    "17": { "valueSourceIndex": 1, "value": 30869.2 },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": 176.35 },
+                    "21": { "valueSourceIndex": 1, "value": 6857.55 },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Southern", "levelSourceIndex": 0 }],
+              "value": "Southern",
+              "identity": { "identityIndex": 48 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Helicopter", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Helicopter",
+                  "identity": { "identityIndex": 49 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": 401.95 },
+                    "11": { "valueSourceIndex": 1, "value": 25197.05 },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": 149.95 },
+                    "17": { "valueSourceIndex": 1, "value": 87992.5 },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": 176.35 },
+                    "21": { "valueSourceIndex": 1, "value": 25330.95 },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Southwest", "levelSourceIndex": 0 }],
+              "value": "Southwest",
+              "identity": { "identityIndex": 50 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Helicopter", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Helicopter",
+                  "identity": { "identityIndex": 51 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": 401.95 },
+                    "11": { "valueSourceIndex": 1, "value": 7654.8 },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": 149.95 },
+                    "17": { "valueSourceIndex": 1, "value": 36858.95 },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": 176.35 },
+                    "21": { "valueSourceIndex": 1, "value": 13015.35 },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 0,
+          "levelValues": [{ "value": "Co-Axial", "levelSourceIndex": 0 }],
+          "value": "Co-Axial",
+          "identity": { "identityIndex": 52 },
+          "childIdentityFields": [
+            {
+              "_kind": 2,
+              "source": { "_kind": 0, "entity": "Region", "kind": 0 },
+              "ref": "Region",
+              "kind": 2
+            }
+          ],
+          "children": [
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Midwest", "levelSourceIndex": 0 }],
+              "value": "Midwest",
+              "identity": { "identityIndex": 53 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Helicopter", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Helicopter",
+                  "identity": { "identityIndex": 54 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": 389.95 },
+                    "7": { "valueSourceIndex": 1, "value": 875534.4 },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": 63.55 },
+                    "15": { "valueSourceIndex": 1, "value": 416249.15 },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": 151.15 },
+                    "19": { "valueSourceIndex": 1, "value": 351836.65 },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "New England", "levelSourceIndex": 0 }
+              ],
+              "value": "New England",
+              "identity": { "identityIndex": 55 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Helicopter", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Helicopter",
+                  "identity": { "identityIndex": 56 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": 389.95 },
+                    "7": { "valueSourceIndex": 1, "value": 207491.5 },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": 63.55 },
+                    "15": { "valueSourceIndex": 1, "value": 109020.8 },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": 151.15 },
+                    "19": { "valueSourceIndex": 1, "value": 78980.7 },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Northeast", "levelSourceIndex": 0 }],
+              "value": "Northeast",
+              "identity": { "identityIndex": 57 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Helicopter", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Helicopter",
+                  "identity": { "identityIndex": 58 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": 389.95 },
+                    "7": { "valueSourceIndex": 1, "value": 455251 },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": 63.55 },
+                    "15": { "valueSourceIndex": 1, "value": 204960.05 },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": 151.15 },
+                    "19": { "valueSourceIndex": 1, "value": 225175.3 },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "Pacific Northwest", "levelSourceIndex": 0 }
+              ],
+              "value": "Pacific Northwest",
+              "identity": { "identityIndex": 59 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Helicopter", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Helicopter",
+                  "identity": { "identityIndex": 60 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": 389.95 },
+                    "7": { "valueSourceIndex": 1, "value": 282295.1 },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": 63.55 },
+                    "15": { "valueSourceIndex": 1, "value": 137089.1 },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": 151.15 },
+                    "19": { "valueSourceIndex": 1, "value": 195622.85 },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Southern", "levelSourceIndex": 0 }],
+              "value": "Southern",
+              "identity": { "identityIndex": 61 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Helicopter", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Helicopter",
+                  "identity": { "identityIndex": 62 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": 389.95 },
+                    "7": { "valueSourceIndex": 1, "value": 1180052.2 },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": 63.55 },
+                    "15": { "valueSourceIndex": 1, "value": 532771.6 },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": 151.15 },
+                    "19": { "valueSourceIndex": 1, "value": 425232.5 },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Southwest", "levelSourceIndex": 0 }],
+              "value": "Southwest",
+              "identity": { "identityIndex": 63 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Helicopter", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Helicopter",
+                  "identity": { "identityIndex": 64 },
+                  "values": {
+                    "0": { "value": null },
+                    "1": { "valueSourceIndex": 1, "value": null },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": 389.95 },
+                    "7": { "valueSourceIndex": 1, "value": 598892.55 },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": 63.55 },
+                    "15": { "valueSourceIndex": 1, "value": 266554.75 },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": 151.15 },
+                    "19": { "valueSourceIndex": 1, "value": 148788.95 },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": null },
+                    "37": { "valueSourceIndex": 1, "value": null },
+                    "38": { "value": null },
+                    "39": { "valueSourceIndex": 1, "value": null }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 0,
+          "levelValues": [{ "value": "Glider", "levelSourceIndex": 0 }],
+          "value": "Glider",
+          "identity": { "identityIndex": 65 },
+          "childIdentityFields": [
+            {
+              "_kind": 2,
+              "source": { "_kind": 0, "entity": "Region", "kind": 0 },
+              "ref": "Region",
+              "kind": 2
+            }
+          ],
+          "children": [
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Midwest", "levelSourceIndex": 0 }],
+              "value": "Midwest",
+              "identity": { "identityIndex": 66 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Airplane", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Airplane",
+                  "identity": { "identityIndex": 67 },
+                  "values": {
+                    "0": { "value": 169.35 },
+                    "1": { "valueSourceIndex": 1, "value": 187000.45 },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": 79.15 },
+                    "37": { "valueSourceIndex": 1, "value": 128295.45 },
+                    "38": { "value": 216.65 },
+                    "39": { "valueSourceIndex": 1, "value": 209952.4 }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "New England", "levelSourceIndex": 0 }
+              ],
+              "value": "New England",
+              "identity": { "identityIndex": 68 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Airplane", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Airplane",
+                  "identity": { "identityIndex": 69 },
+                  "values": {
+                    "0": { "value": 169.35 },
+                    "1": { "valueSourceIndex": 1, "value": 47081.25 },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": 79.15 },
+                    "37": { "valueSourceIndex": 1, "value": 32543.1 },
+                    "38": { "value": 216.65 },
+                    "39": { "valueSourceIndex": 1, "value": 59538.55 }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Northeast", "levelSourceIndex": 0 }],
+              "value": "Northeast",
+              "identity": { "identityIndex": 70 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Airplane", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Airplane",
+                  "identity": { "identityIndex": 71 },
+                  "values": {
+                    "0": { "value": 169.35 },
+                    "1": { "valueSourceIndex": 1, "value": 96887.7 },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": 79.15 },
+                    "37": { "valueSourceIndex": 1, "value": 69155.6 },
+                    "38": { "value": 216.65 },
+                    "39": { "valueSourceIndex": 1, "value": 94843 }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "Pacific Northwest", "levelSourceIndex": 0 }
+              ],
+              "value": "Pacific Northwest",
+              "identity": { "identityIndex": 72 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Airplane", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Airplane",
+                  "identity": { "identityIndex": 73 },
+                  "values": {
+                    "0": { "value": 169.35 },
+                    "1": { "valueSourceIndex": 1, "value": 66956.25 },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": 79.15 },
+                    "37": { "valueSourceIndex": 1, "value": 43232.5 },
+                    "38": { "value": 216.65 },
+                    "39": { "valueSourceIndex": 1, "value": 89836.2 }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Southern", "levelSourceIndex": 0 }],
+              "value": "Southern",
+              "identity": { "identityIndex": 74 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Airplane", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Airplane",
+                  "identity": { "identityIndex": 75 },
+                  "values": {
+                    "0": { "value": 169.35 },
+                    "1": { "valueSourceIndex": 1, "value": 246728.45 },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": 79.15 },
+                    "37": { "valueSourceIndex": 1, "value": 170357.6 },
+                    "38": { "value": 216.65 },
+                    "39": { "valueSourceIndex": 1, "value": 244733.4 }
+                  }
+                }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Southwest", "levelSourceIndex": 0 }],
+              "value": "Southwest",
+              "identity": { "identityIndex": 76 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                  "ref": "Item Group",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [
+                    { "value": "Airplane", "levelSourceIndex": 0 }
+                  ],
+                  "value": "Airplane",
+                  "identity": { "identityIndex": 77 },
+                  "values": {
+                    "0": { "value": 169.35 },
+                    "1": { "valueSourceIndex": 1, "value": 116042.3 },
+                    "2": { "value": null },
+                    "3": { "valueSourceIndex": 1, "value": null },
+                    "4": { "value": null },
+                    "5": { "valueSourceIndex": 1, "value": null },
+                    "6": { "value": null },
+                    "7": { "valueSourceIndex": 1, "value": null },
+                    "8": { "value": null },
+                    "9": { "valueSourceIndex": 1, "value": null },
+                    "10": { "value": null },
+                    "11": { "valueSourceIndex": 1, "value": null },
+                    "12": { "value": null },
+                    "13": { "valueSourceIndex": 1, "value": null },
+                    "14": { "value": null },
+                    "15": { "valueSourceIndex": 1, "value": null },
+                    "16": { "value": null },
+                    "17": { "valueSourceIndex": 1, "value": null },
+                    "18": { "value": null },
+                    "19": { "valueSourceIndex": 1, "value": null },
+                    "20": { "value": null },
+                    "21": { "valueSourceIndex": 1, "value": null },
+                    "22": { "value": null },
+                    "23": { "valueSourceIndex": 1, "value": null },
+                    "24": { "value": null },
+                    "25": { "valueSourceIndex": 1, "value": null },
+                    "26": { "value": null },
+                    "27": { "valueSourceIndex": 1, "value": null },
+                    "28": { "value": null },
+                    "29": { "valueSourceIndex": 1, "value": null },
+                    "30": { "value": null },
+                    "31": { "valueSourceIndex": 1, "value": null },
+                    "32": { "value": null },
+                    "33": { "valueSourceIndex": 1, "value": null },
+                    "34": { "value": null },
+                    "35": { "valueSourceIndex": 1, "value": null },
+                    "36": { "value": 79.15 },
+                    "37": { "valueSourceIndex": 1, "value": 81558.2 },
+                    "38": { "value": 216.65 },
+                    "39": { "valueSourceIndex": 1, "value": 190809.9 }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "columns": {
+    "levels": [
+      {
+        "sources": [
+          {
+            "roles": { "columns": true },
+            "type": {
+              "underlyingType": 1,
+              "category": null,
+              "primitiveType": 1,
+              "extendedType": 1,
+              "categoryString": null,
+              "text": true,
+              "numeric": false,
+              "integer": false,
+              "bool": false,
+              "dateTime": false,
+              "duration": false,
+              "binary": false,
+              "json": false,
+              "none": false
+            },
+            "displayName": "Kit Type",
+            "queryName": "Product.Kit Type",
+            "expr": {
+              "_kind": 2,
+              "source": {
+                "_kind": 0,
+                "entity": "Product",
+                "variable": "p",
+                "kind": 0
+              },
+              "ref": "Kit Type",
+              "kind": 2
+            },
+            "rolesIndex": { "columns": [0] },
+            "index": 5,
+            "identityExprs": [
+              {
+                "_kind": 2,
+                "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                "ref": "Kit Type",
+                "kind": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "sources": [
+          {
+            "roles": { "columns": true },
+            "type": {
+              "underlyingType": 1,
+              "category": null,
+              "primitiveType": 1,
+              "extendedType": 1,
+              "categoryString": null,
+              "text": true,
+              "numeric": false,
+              "integer": false,
+              "bool": false,
+              "dateTime": false,
+              "duration": false,
+              "binary": false,
+              "json": false,
+              "none": false
+            },
+            "displayName": "Product",
+            "queryName": "Product.Product",
+            "expr": {
+              "_kind": 2,
+              "source": {
+                "_kind": 0,
+                "entity": "Product",
+                "variable": "p",
+                "kind": 0
+              },
+              "ref": "Product",
+              "kind": 2
+            },
+            "rolesIndex": { "columns": [1] },
+            "index": 3,
+            "identityExprs": [
+              {
+                "_kind": 2,
+                "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+                "ref": "Product",
+                "kind": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "sources": [
+          {
+            "roles": { "values": true },
+            "type": {
+              "underlyingType": 258,
+              "category": null,
+              "primitiveType": 2,
+              "extendedType": 258,
+              "categoryString": null,
+              "text": false,
+              "numeric": true,
+              "integer": false,
+              "bool": false,
+              "dateTime": false,
+              "duration": false,
+              "binary": false,
+              "json": false,
+              "none": false
+            },
+            "format": "\\\\$#,0.###############;(\\\\$#,0.###############);\\\\$#,0.###############",
+            "displayName": "Sum of RetailPrice",
+            "queryName": "CountNonNull(Product.RetailPrice)",
+            "expr": {
+              "_kind": 4,
+              "arg": {
+                "_kind": 2,
+                "source": {
+                  "_kind": 0,
+                  "entity": "Product",
+                  "variable": "p",
+                  "kind": 0
+                },
+                "ref": "RetailPrice",
+                "kind": 2
+              },
+              "func": 0,
+              "kind": 4
+            },
+            "sort": 2,
+            "sortOrder": 0,
+            "rolesIndex": { "values": [0] },
+            "index": 1,
+            "isMeasure": true
+          },
+          {
+            "roles": { "values": true },
+            "type": {
+              "underlyingType": 258,
+              "category": null,
+              "primitiveType": 2,
+              "extendedType": 258,
+              "categoryString": null,
+              "text": false,
+              "numeric": true,
+              "integer": false,
+              "bool": false,
+              "dateTime": false,
+              "duration": false,
+              "binary": false,
+              "json": false,
+              "none": false
+            },
+            "format": "\\\\$#,0.00;(\\\\$#,0.00);\\\\$#,0.00",
+            "displayName": "Sales",
+            "queryName": "Sum(Sales.Sales)",
+            "expr": {
+              "_kind": 4,
+              "arg": {
+                "_kind": 2,
+                "source": {
+                  "_kind": 0,
+                  "entity": "Sales",
+                  "variable": "s",
+                  "kind": 0
+                },
+                "ref": "Sales",
+                "kind": 2
+              },
+              "func": 0,
+              "kind": 4
+            },
+            "rolesIndex": { "values": [1] },
+            "index": 6,
+            "isMeasure": true
+          }
+        ]
+      }
+    ],
+    "root": {
+      "childIdentityFields": [
+        {
+          "_kind": 2,
+          "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+          "ref": "Kit Type",
+          "kind": 2
+        }
+      ],
+      "children": [
+        {
+          "level": 0,
+          "levelValues": [{ "value": "KIT", "levelSourceIndex": 0 }],
+          "value": "KIT",
+          "identity": { "identityIndex": 78 },
+          "childIdentityFields": [
+            {
+              "_kind": 2,
+              "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+              "ref": "Product",
+              "kind": 2
+            }
+          ],
+          "children": [
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "Tailspin Aviator Mk2-11", "levelSourceIndex": 0 }
+              ],
+              "value": "Tailspin Aviator Mk2-11",
+              "identity": { "identityIndex": 79 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "Tailspin Aviator Mk2-12", "levelSourceIndex": 0 }
+              ],
+              "value": "Tailspin Aviator Mk2-12",
+              "identity": { "identityIndex": 80 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "Tailspin Aviator Mk2-15", "levelSourceIndex": 0 }
+              ],
+              "value": "Tailspin Aviator Mk2-15",
+              "identity": { "identityIndex": 81 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                {
+                  "value": "Tailspin Heli - Co-Ax Pro Mk I - 4ch",
+                  "levelSourceIndex": 0
+                }
+              ],
+              "value": "Tailspin Heli - Co-Ax Pro Mk I - 4ch",
+              "identity": { "identityIndex": 82 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                {
+                  "value": "Tailspin Heli - Max Pro Flight - 6ch",
+                  "levelSourceIndex": 0
+                }
+              ],
+              "value": "Tailspin Heli - Max Pro Flight - 6ch",
+              "identity": { "identityIndex": 83 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                {
+                  "value": "Tailspin Heli - Pro Mk III - 5ch",
+                  "levelSourceIndex": 0
+                }
+              ],
+              "value": "Tailspin Heli - Pro Mk III - 5ch",
+              "identity": { "identityIndex": 84 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "Tailspin Warbird BM32", "levelSourceIndex": 0 }
+              ],
+              "value": "Tailspin Warbird BM32",
+              "identity": { "identityIndex": 85 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            }
+          ]
+        },
+        {
+          "level": 0,
+          "levelValues": [{ "value": "RTF", "levelSourceIndex": 0 }],
+          "value": "RTF",
+          "identity": { "identityIndex": 86 },
+          "childIdentityFields": [
+            {
+              "_kind": 2,
+              "source": { "_kind": 0, "entity": "Product", "kind": 0 },
+              "ref": "Product",
+              "kind": 2
+            }
+          ],
+          "children": [
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "3CAX-B Helicopter", "levelSourceIndex": 0 }
+              ],
+              "value": "3CAX-B Helicopter",
+              "identity": { "identityIndex": 87 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "3CFP-I Helicopter", "levelSourceIndex": 0 }
+              ],
+              "value": "3CFP-I Helicopter",
+              "identity": { "identityIndex": 88 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "4CAX-B Helicopter", "levelSourceIndex": 0 }
+              ],
+              "value": "4CAX-B Helicopter",
+              "identity": { "identityIndex": 89 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "4CFP-I Helicopter", "levelSourceIndex": 0 }
+              ],
+              "value": "4CFP-I Helicopter",
+              "identity": { "identityIndex": 90 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "6CCP-A Helicopter", "levelSourceIndex": 0 }
+              ],
+              "value": "6CCP-A Helicopter",
+              "identity": { "identityIndex": 91 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "P47 4 Channel", "levelSourceIndex": 0 }
+              ],
+              "value": "P47 4 Channel",
+              "identity": { "identityIndex": 92 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "P47 5 Channel", "levelSourceIndex": 0 }
+              ],
+              "value": "P47 5 Channel",
+              "identity": { "identityIndex": 93 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "P51", "levelSourceIndex": 0 }],
+              "value": "P51",
+              "identity": { "identityIndex": 94 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "Piper Cub 3 Channel", "levelSourceIndex": 0 }
+              ],
+              "value": "Piper Cub 3 Channel",
+              "identity": { "identityIndex": 95 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "Piper Cub 4 Channel", "levelSourceIndex": 0 }
+              ],
+              "value": "Piper Cub 4 Channel",
+              "identity": { "identityIndex": 96 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "SkyTrainer", "levelSourceIndex": 0 }],
+              "value": "SkyTrainer",
+              "identity": { "identityIndex": 97 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "Trainer - Tailspin GL-120", "levelSourceIndex": 0 }
+              ],
+              "value": "Trainer - Tailspin GL-120",
+              "identity": { "identityIndex": 98 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [
+                { "value": "Trainer - Tailspin GL-155", "levelSourceIndex": 0 }
+              ],
+              "value": "Trainer - Tailspin GL-155",
+              "identity": { "identityIndex": 99 },
+              "children": [
+                { "level": 2 },
+                { "level": 2, "levelSourceIndex": 1 }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "valueSources": [
+    {
+      "roles": { "values": true },
+      "type": {
+        "underlyingType": 258,
+        "category": null,
+        "primitiveType": 2,
+        "extendedType": 258,
+        "categoryString": null,
+        "text": false,
+        "numeric": true,
+        "integer": false,
+        "bool": false,
+        "dateTime": false,
+        "duration": false,
+        "binary": false,
+        "json": false,
+        "none": false
+      },
+      "format": "\\\\$#,0.###############;(\\\\$#,0.###############);\\\\$#,0.###############",
+      "displayName": "Sum of RetailPrice",
+      "queryName": "CountNonNull(Product.RetailPrice)",
+      "expr": {
+        "_kind": 4,
+        "arg": {
+          "_kind": 2,
+          "source": {
+            "_kind": 0,
+            "entity": "Product",
+            "variable": "p",
+            "kind": 0
+          },
+          "ref": "RetailPrice",
+          "kind": 2
+        },
+        "func": 0,
+        "kind": 4
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "rolesIndex": { "values": [0] },
+      "index": 1,
+      "isMeasure": true
+    },
+    {
+      "roles": { "values": true },
+      "type": {
+        "underlyingType": 258,
+        "category": null,
+        "primitiveType": 2,
+        "extendedType": 258,
+        "categoryString": null,
+        "text": false,
+        "numeric": true,
+        "integer": false,
+        "bool": false,
+        "dateTime": false,
+        "duration": false,
+        "binary": false,
+        "json": false,
+        "none": false
+      },
+      "format": "\\\\$#,0.00;(\\\\$#,0.00);\\\\$#,0.00",
+      "displayName": "Sales",
+      "queryName": "Sum(Sales.Sales)",
+      "expr": {
+        "_kind": 4,
+        "arg": {
+          "_kind": 2,
+          "source": {
+            "_kind": 0,
+            "entity": "Sales",
+            "variable": "s",
+            "kind": 0
+          },
+          "ref": "Sales",
+          "kind": 2
+        },
+        "func": 0,
+        "kind": 4
+      },
+      "rolesIndex": { "values": [1] },
+      "index": 6,
+      "isMeasure": true
+    }
+  ]
+}

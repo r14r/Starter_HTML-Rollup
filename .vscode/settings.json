@@ -1,0 +1,16 @@
+{
+  "editor.formatOnSave": false,
+  "makefile.extensionOutputFolder": "./.vscode",
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    "package-lock.json": true,
+    "pnpm-lock.yaml": true,
+    "node_modules": true
+  },
+  "explorerExclude.backup": null
+}

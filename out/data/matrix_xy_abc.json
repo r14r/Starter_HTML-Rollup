@@ -1,0 +1,402 @@
+{
+  "rows": {
+    "levels": [
+      {
+        "sources": [
+          {
+            "roles": { "rows": true },
+            "displayName": "X"
+          }
+        ]
+      },
+      {
+        "sources": [
+          {
+            "roles": { "rows": true },
+            "displayName": "Y"
+          }
+        ]
+      }
+    ],
+    "root": {
+      "children": [
+        { 
+          "level": 0,
+          "levelValues": [{ "value": "X1", "levelSourceIndex": 0 }],
+          "value": "X1",
+          "children": [
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Y2", "levelSourceIndex": 0 }],
+              "value": "Y2",
+              "values": {
+                "0": { "value": 11112 },
+                "1": { "value": null },
+                "2": { "value": 11112 },
+                "3": { "value": 12112 },
+                "4": { "value": null },
+                "5": { "value": 12112 },
+                "6": { "value": 23224 },
+                "7": { "value": 23224 }
+              }
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Y1", "levelSourceIndex": 0 }],
+              "value": "Y1",
+              "values": {
+                "0": { "value": 11111 },
+                "1": { "value": null },
+                "2": { "value": 11111 },
+                "3": { "value": 12111 },
+                "4": { "value": null },
+                "5": { "value": 12111 },
+                "6": { "value": 23222 },
+                "7": { "value": 23222 }
+              }
+            },
+            { 
+              "level": 1,
+              "isSubtotal": true,
+              "values": {
+                "0": { "value": 22223 },
+                "1": { "value": null },
+                "2": { "value": 22223 },
+                "3": { "value": 24223 },
+                "4": { "value": null },
+                "5": { "value": 24223 },
+                "6": { "value": 46446 },
+                "7": { "value": 46446 }
+              }
+            }
+          ]
+        },
+        { 
+          "level": 0,
+          "levelValues": [{ "value": "X2", "levelSourceIndex": 0 }],
+          "value": "X2",
+          "children": [
+            {
+              "level": 1,
+              "levelValues": [{ "value": "Y1", "levelSourceIndex": 0 }],
+              "value": "Y1",
+              "values": {
+                "0": { "value": null },
+                "1": { "value": 11221 },
+                "2": { "value": 11221 },
+                "3": { "value": null },
+                "4": { "value": 12221 },
+                "5": { "value": 12221 },
+                "6": { "value": 23442 },
+                "7": { "value": 23442 }
+              }
+            },
+            { 
+              "level": 1,
+              "isSubtotal": true,
+              "values": {
+                "0": { "value": null },
+                "1": { "value": 11221 },
+                "2": { "value": 11221 },
+                "3": { "value": null },
+                "4": { "value": 12221 },
+                "5": { "value": 12221 },
+                "6": { "value": 23442 },
+                "7": { "value": 23442 }
+              }
+            }
+          ]
+        },
+        { 
+          "level": 0,
+          "isSubtotal": true,
+          "values": {
+            "0": { "value": 22223 },
+            "1": { "value": 11221 },
+            "2": { "value": 33444 },
+            "3": { "value": 24223 },
+            "4": { "value": 12221 },
+            "5": { "value": 36444 },
+            "6": { "value": 69888 },
+            "7": { "value": 69888 }
+          }
+        }
+      ]
+    }
+  },
+  "columns": {
+    "levels": [
+      {
+        "sources": [
+          {
+            "roles": { "columns": true },
+            "type": {
+              "underlyingType": 1,
+              "category": null,
+              "primitiveType": 1,
+              "extendedType": 1,
+              "categoryString": null,
+              "text": true,
+              "numeric": false,
+              "integer": false,
+              "bool": false,
+              "dateTime": false,
+              "duration": false,
+              "binary": false,
+              "json": false,
+              "none": false
+            },
+            "displayName": "A",
+            "queryName": "Table.A",
+            "expr": {
+              "_kind": 2,
+              "source": {
+                "_kind": 0,
+                "entity": "Table",
+                "variable": "t",
+                "kind": 0
+              },
+              "ref": "A",
+              "kind": 2
+            },
+            "rolesIndex": { "columns": [0] },
+            "index": 3,
+            "identityExprs": [
+              {
+                "_kind": 2,
+                "source": { "_kind": 0, "entity": "Table", "kind": 0 },
+                "ref": "A",
+                "kind": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "sources": [
+          {
+            "roles": { "columns": true },
+            "type": {
+              "underlyingType": 1,
+              "category": null,
+              "primitiveType": 1,
+              "extendedType": 1,
+              "categoryString": null,
+              "text": true,
+              "numeric": false,
+              "integer": false,
+              "bool": false,
+              "dateTime": false,
+              "duration": false,
+              "binary": false,
+              "json": false,
+              "none": false
+            },
+            "displayName": "B",
+            "queryName": "Table.B",
+            "expr": {
+              "_kind": 2,
+              "source": {
+                "_kind": 0,
+                "entity": "Table",
+                "variable": "t",
+                "kind": 0
+              },
+              "ref": "B",
+              "kind": 2
+            },
+            "rolesIndex": { "columns": [1] },
+            "index": 4,
+            "identityExprs": [
+              {
+                "_kind": 2,
+                "source": { "_kind": 0, "entity": "Table", "kind": 0 },
+                "ref": "B",
+                "kind": 2
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "sources": [
+          {
+            "roles": { "columns": true },
+            "type": {
+              "underlyingType": 1,
+              "category": null,
+              "primitiveType": 1,
+              "extendedType": 1,
+              "categoryString": null,
+              "text": true,
+              "numeric": false,
+              "integer": false,
+              "bool": false,
+              "dateTime": false,
+              "duration": false,
+              "binary": false,
+              "json": false,
+              "none": false
+            },
+            "displayName": "C",
+            "queryName": "Table.C",
+            "expr": {
+              "_kind": 2,
+              "source": {
+                "_kind": 0,
+                "entity": "Table",
+                "variable": "t",
+                "kind": 0
+              },
+              "ref": "C",
+              "kind": 2
+            },
+            "rolesIndex": { "columns": [2] },
+            "index": 5,
+            "identityExprs": [
+              {
+                "_kind": 2,
+                "source": { "_kind": 0, "entity": "Table", "kind": 0 },
+                "ref": "C",
+                "kind": 2
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "root": {
+      "childIdentityFields": [
+        {
+          "_kind": 2,
+          "source": { "_kind": 0, "entity": "Table", "kind": 0 },
+          "ref": "A",
+          "kind": 2
+        }
+      ],
+      "children": [
+        {
+          "level": 0,
+          "levelValues": [{ "value": "A1", "levelSourceIndex": 0 }],
+          "value": "A1",
+          "identity": { "identityIndex": 5 },
+          "childIdentityFields": [
+            {
+              "_kind": 2,
+              "source": { "_kind": 0, "entity": "Table", "kind": 0 },
+              "ref": "B",
+              "kind": 2
+            }
+          ],
+          "children": [
+            {
+              "level": 1,
+              "levelValues": [{ "value": "B1", "levelSourceIndex": 0 }],
+              "value": "B1",
+              "identity": { "identityIndex": 6 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Table", "kind": 0 },
+                  "ref": "C",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [{ "value": "C1", "levelSourceIndex": 0 }],
+                  "value": "C1",
+                  "identity": { "identityIndex": 7 }
+                },
+                {
+                  "level": 2,
+                  "levelValues": [{ "value": "C2", "levelSourceIndex": 0 }],
+                  "value": "C2",
+                  "identity": { "identityIndex": 8 }
+                },
+                { "level": 2, "isSubtotal": true }
+              ]
+            },
+            {
+              "level": 1,
+              "levelValues": [{ "value": "B2", "levelSourceIndex": 0 }],
+              "value": "B2",
+              "identity": { "identityIndex": 9 },
+              "childIdentityFields": [
+                {
+                  "_kind": 2,
+                  "source": { "_kind": 0, "entity": "Table", "kind": 0 },
+                  "ref": "C",
+                  "kind": 2
+                }
+              ],
+              "children": [
+                {
+                  "level": 2,
+                  "levelValues": [{ "value": "C1", "levelSourceIndex": 0 }],
+                  "value": "C1",
+                  "identity": { "identityIndex": 10 }
+                },
+                {
+                  "level": 2,
+                  "levelValues": [{ "value": "C2", "levelSourceIndex": 0 }],
+                  "value": "C2",
+                  "identity": { "identityIndex": 11 }
+                },
+                { "level": 2, "isSubtotal": true }
+              ]
+            },
+            { "level": 1, "isSubtotal": true }
+          ]
+        },
+        { "level": 0, "isSubtotal": true }
+      ]
+    }
+  },
+  "valueSources": [
+    {
+      "roles": { "measure": true },
+      "type": {
+        "underlyingType": 260,
+        "category": null,
+        "primitiveType": 4,
+        "extendedType": 260,
+        "categoryString": null,
+        "text": false,
+        "numeric": true,
+        "integer": true,
+        "bool": false,
+        "dateTime": false,
+        "duration": false,
+        "binary": false,
+        "json": false,
+        "none": false
+      },
+      "format": "0",
+      "displayName": "Values",
+      "queryName": "Sum(Table.Values)",
+      "expr": {
+        "_kind": 4,
+        "arg": {
+          "_kind": 2,
+          "source": {
+            "_kind": 0,
+            "entity": "Table",
+            "variable": "t",
+            "kind": 0
+          },
+          "ref": "Values",
+          "kind": 2
+        },
+        "func": 0,
+        "kind": 4
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "rolesIndex": { "measure": [0] },
+      "index": 0,
+      "isMeasure": true
+    }
+  ]
+}
